@@ -1,0 +1,262 @@
+
+body{
+		background: #f9f9fb;
+}
+
+.text-slider-items {
+        display: none;
+    }
+
+    .heading {
+        margin-top: 2px;
+        text-align: center;
+        background-color: black;
+    }
+
+    .heading h1 {
+        color: White;
+        font-size: 20px;
+    }
+
+    .heading h3 {
+        color: White;
+        font-size: 15px;
+    }
+
+.contact_links {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+.container_aside {
+      width: 80%;
+      margin: auto;
+      background-color: #ccc;
+      height: 500px;
+      padding: 20px;
+    }
+.profile-card {
+  background-color: ;
+  width: max-content;
+  height: max-content;
+  position: absolute;
+  left: 50%;
+  top: 60%;
+  overflow: hidden;
+  opacity: 0;
+  margin-top: 50px;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-border-radius: 50%;
+  border-radius: 70%;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16), 0px 3px 6px rgba(0, 0, 0, 0.23);
+  animation: init 0.5s 0.2s cubic-bezier(0.55, 0.055, 0.675, 0.19) forwards,
+             moveDown 0.8s 0.8s cubic-bezier(0.6, -0.28, 0.735, 0.045) forwards,
+             moveUp 0.8s 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards,
+             materia 0.5s 1.5s cubic-bezier(0.86, 0, 0.07, 1) forwards;
+}
+
+
+@keyframes init {
+  0% {
+    width: 0px;
+    height: 0px;
+  }
+  100% {
+    width: 56px;
+    height: 56px;
+    margin-top: 0px;
+    opacity: 1;
+  }
+}
+
+@keyframes moveDown {
+  0% {
+    top: 50%;
+  }
+  50% {
+    top: 40%;
+  }
+  100% {
+    top: 100%;
+  }
+}
+
+@keyframes moveUp {
+  0% {
+    background: #FFB300;
+    top: 100%;
+  }
+  50% {
+    top: 40%;
+  }
+  100% {
+    top: 50%;
+    background: #E0E0E0;
+  }
+}
+
+@keyframes materia {
+  0% {
+    background: #E0E0E0;
+  }
+  50% {
+    border-radius: 4px;
+  }
+  100% {
+    width: 80%;
+    height: auto;
+    top:51%;
+    background: #ffebcc;
+    border-radius: 4px;
+  }
+}
+
+.portfolio{
+	padding:2%;
+	text-align:center;
+  background: #ffebcc;
+}
+.headingbar{
+	background: #fff;
+	padding: 10px;
+	text-align: left;
+	box-shadow: 0px 0px 4px 0px #545b62;
+}
+.headingbar img{
+	width: 8%;
+}
+.bio-info{
+	padding: 20px;
+	background:#fff;
+	box-shadow: 0px 0px 4px 0px #b0b3b7;
+}
+.name{
+	font-family: 'Charmonman', cursive;
+	font-weight:600;
+}
+.bio-image{
+  padding: 5px;
+	text-align:center;
+}
+.bio-image img{
+	border-radius:50%;
+  height: 275px;
+}
+.bio-content{
+  padding: 10px;
+	text-align:left;
+}
+.bio-content p{
+	font-weight:600;
+	font-size:20px;
+}
+
+/*resume*/
+ul.timeline {
+    list-style-type: none;
+    position: relative;
+}
+ul.timeline:before {
+    content: ' ';
+    background: #d4d9df;
+    display: inline-block;
+    position: absolute;
+    left: 29px;
+    width: 2px;
+    height: 100%;
+    z-index: 400;
+}
+ul.timeline > li {
+    margin: 20px 0;
+    padding-left: 20px;
+}
+ul.timeline > li:before {
+    content: ' ';
+    background: white;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid #22c0e8;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    z-index: 400;
+}
+
+ul.timeline p.year{
+    font-size: 10px;
+    background: #e4edf9;
+    padding: 5px 15px;
+    display: inline-block;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+/*icons*/
+/* Style all font awesome icons */
+.fa {
+  padding: 5px;
+  font-size: 25px;
+  text-align: center;
+  display: block;
+  color: black;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* contact form*/
+.contact-form{
+  background: #fff;
+  margin-top: 2%;
+  margin-bottom: 5%;
+  width: 70%;
+  margin:5%;
+}
+.contact-form .form-control{
+  border-radius:1rem;
+}
+.contact-image{
+  text-align: center;
+}
+.contact-image img{
+  border-radius: 6rem;
+  width: 11%;
+  margin-top: -3%;
+  transform: rotate(29deg);
+}
+.contact-form form{
+  padding: 14%;
+}
+.contact-form form .row{
+  margin-bottom: -7%;
+}
+.contact-form h3{
+  margin-bottom: 8%;
+  margin-top: -10%;
+  text-align: center;
+  color: #0062cc;
+}
+.contact-form .btnContact {
+  width: 50%;
+  border: none;
+  border-radius: 1rem;
+  padding: 1.5%;
+  background: #dc3545;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+}
+.btnContactSubmit
+{
+  width: 50%;
+  border-radius: 1rem;
+  padding: 1.5%;
+  color: #fff;
+  background-color: #0062cc;
+  border: none;
+  cursor: pointer;
+}
